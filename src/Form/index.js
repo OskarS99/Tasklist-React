@@ -1,9 +1,9 @@
 import "./style.css";
 
 const Form = () => (
-    <form className="form form">
-            <input className="form__input newTask" type="text" placeholder="Co jest do zrobienia?" autofocus/>
-            <button className="form__button button">Zatwierdż zadanie</button>
+    <form className="form">
+            <input className="form__input" type="text" placeholder="Co jest do zrobienia?" autofocus/>
+            <button className="form__button">Zatwierdż zadanie</button>
     </form>
 );
 
