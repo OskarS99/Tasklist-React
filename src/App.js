@@ -5,7 +5,9 @@ import Section from "./Section";
 import Header from "./Header";
 import Container from "./Container";
 
-const tasks = [];
+const tasks = [
+  { id: 1, content: "zjeść ryż", done: false },
+];
 const hideDoneTask = false;
 
 
