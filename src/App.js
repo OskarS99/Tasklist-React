@@ -21,11 +21,11 @@ function App() {
       />
       <Section
         title="Dodaj zadanie"
-        body={
-          <Tasks tasks={tasks} hideDoneTask={hideDoneTask} />
-        }
         extraHeaderContent={
           <Buttons tasks={tasks} hideDoneTasks={hideDoneTask} />
+        }
+        body={
+          <Tasks tasks={tasks} hideDoneTask={hideDoneTask} />
         }
       />
     </Container>
