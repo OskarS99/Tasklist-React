@@ -8,7 +8,7 @@ import Container from "./Container";
 const tasks = [
   { id: 1, content: "zjeść ryż", done: false },
 ];
-const hideDoneTask = false;
+const hideDone = false;
 
 
 function App() {
@@ -22,10 +22,10 @@ function App() {
       <Section
         title="Dodaj zadanie"
         extraHeaderContent={
-          <Buttons tasks={tasks} hideDoneTasks={hideDoneTask} />
+          <Buttons tasks={tasks} hideDone={hideDone} />
         }
         body={
-          <Tasks tasks={tasks} hideDoneTask={hideDoneTask} />
+          <Tasks tasks={tasks} hideDoneTask={hideDone} />
         }
       />
     </Container>
