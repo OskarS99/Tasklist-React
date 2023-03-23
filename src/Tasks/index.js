@@ -1,7 +1,7 @@
 import "./style.css";
 
 const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
-    <ul className="list">
+    <ul className="list" >
         {tasks.map(task => (
             <li
             key={task.id}

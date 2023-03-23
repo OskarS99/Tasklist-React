@@ -17,7 +17,7 @@ function App() {
   ]);
 
   const toggleHideDone = () => {
-    setHideDone(!hideDone);
+    setHideDone(hideDone => !hideDone);
   }
 
   const removeTask = (id) => {
@@ -40,10 +40,10 @@ function App() {
   }
 
   const addNewTask = (newTaskContent) => {
-     if (newTaskContent === "") {
+    if (newTaskContent === "") {
       return null;
-     }
-       
+    }
+
     return (
       setTasks(tasks => [
         ...tasks,
@@ -76,10 +76,9 @@ function App() {
         }
         body={
           <Tasks tasks={tasks}
-            hideDoneTask={hideDone}
+            hideDone={hideDone}
             removeTask={removeTask}
             toggleTaskDone={toggleTaskDone}
-
           />
         }
       />
