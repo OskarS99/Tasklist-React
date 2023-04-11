@@ -13,7 +13,7 @@ Two buttons have been added, one to be able to hide all completed tasks. We also
 HTML
 CSS
 JavaScript
-JS Library: React
+JS Library: React.js
 
 ## Available Scripts
 
