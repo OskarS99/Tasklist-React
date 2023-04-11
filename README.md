@@ -10,10 +10,10 @@ Update</br>
 Two buttons have been added, one to be able to hide all completed tasks. We also have the option to mark all tasks as complete with the help of the second button.
 
 ## Availalble Technology
-###HTML
-###CSS
-###JavaScript
-###JS Library: React.js
+### HTML
+### CSS
+### JavaScript
+### JS Library: React.js
 
 ## Available Scripts
 
