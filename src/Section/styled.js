@@ -1,11 +1,11 @@
-import styled, {css} from "styled-components";
+import styled from "styled-components";
 
-export const SectionPart = styled.section`
+export const SectionWrapper = styled.section`
   background-color: white;
   margin: 10px 0;
 `;
 
-export const H1 = styled.header`
+export const SectionHeader = styled.header`
   font-size: 20px;
   display: grid;
   grid-template-columns: auto auto;
@@ -21,10 +21,10 @@ export const H1 = styled.header`
    }
 `;
 
-export const Title = styled.h2`
+export const SectionTitle = styled.h2`
   margin: 0;
 `;
 
-export const Body = styled.div`
+export const SectionBody = styled.div`
   padding: 20px;
 `;
