@@ -1,7 +1,7 @@
-import { Div, Button } from "./styled.js";
+import { Button, Wrapper } from "./styled.js";
 
 const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
-  <Div>
+  <Wrapper>
     {tasks.length > 0 && (
       <>
         <Button onClick={toggleHideDone}>
@@ -12,7 +12,7 @@ const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
         </Button>
       </>
     )}
-  </Div>
+  </Wrapper>
 );
 
 export default Buttons;
