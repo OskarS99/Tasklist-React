@@ -6,6 +6,7 @@ import Section from "./Section";
 import Header from "./Header";
 import Container from "./Container";
 import { useTasks } from "./useTasks.js";
+import { createGlobalStyle } from "styled-components";
 
 function App() {
   const [hideDone, setHideDone] = useState(false);
@@ -16,8 +17,24 @@ function App() {
   const { tasks, removeTask, toggleTaskDone, setAllDone, addNewTask } =
     useTasks();
 
+  const GlobalStyle = createGlobalStyle`
+    html {
+  box-sizing: border-box;
+}
+
+*, ::after, ::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ededed;
+}
+    `;
+
   return (
     <Container>
+      <GlobalStyle/>
       <Header title="Lista zadań" />
       <Section
         title="Dodaj nowe zadanie"
