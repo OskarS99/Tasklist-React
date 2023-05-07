@@ -5,7 +5,9 @@ import { useSelector, useDispatch } from "react-redux";
 const TasksList = () => {
     const {tasks, hideDone} = useSelector(selectTasks);
     const dispatch = useDispatch();
-    <List >
+
+    return (
+        <List >
         {tasks.map(task => (
             <Item
             hidden={task.done && hideDone}
@@ -29,6 +31,7 @@ const TasksList = () => {
             </Item>
         ))}
     </List>
+    )
 };
 
 export default TasksList;
