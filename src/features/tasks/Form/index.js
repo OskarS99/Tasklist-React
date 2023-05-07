@@ -5,8 +5,6 @@ import { nanoid } from "@reduxjs/toolkit";
 import { addTask } from "../tasksSlice.js";
 
 const Form = () => {  
-  
- 
   const [newTaskContent, setNewTaskContent] = useState("");
   const inputRef = useRef(null);
 
