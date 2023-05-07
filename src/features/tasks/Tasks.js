@@ -1,6 +1,6 @@
 import React from "react";
 import Form from "./Form";
-import TaskList from "./TaskList";
+import TasksList from "./TasksList";
 import Buttons from "./Buttons";
 import Section from "../../common/Section";
 import Header from "../../common/Header";
@@ -37,14 +37,10 @@ body {
       <Section
         title="Dodaj zadanie"
         extraHeaderContent={
-          <Buttons
-
-          />
+          <Buttons/>
         }
         body={
-          <TaskList
-            
-          />
+          <TasksList/>
         }
       />
     </Container>
