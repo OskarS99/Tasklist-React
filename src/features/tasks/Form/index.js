@@ -6,24 +6,26 @@ import { addTask } from "../tasksSlice.js";
 
 const Form = () => {  
   
-  const dispatch = useDispatch();
+ 
   const [newTaskContent, setNewTaskContent] = useState("");
   const inputRef = useRef(null);
 
-
+ const dispatch = useDispatch();
 
   const onFormSubmit = (event) => {
-    event.preventDefault();
-
-    if (newTaskContent.trim() === "") {
-      return;
-    }
-  
+    event.preventDefault(); 
+    
     dispatch(addTask({
       content: newTaskContent.trim(),
       done: false,
       id: nanoid(),
     }))
+
+    if (newTaskContent.trim() === "") {
+      return;
+    }
+  
+   
 
     setNewTaskContent("");
     inputRef.current.focus()
