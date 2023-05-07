@@ -1,15 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import Form from "./Form";
 import TaskList from "./TaskList";
 import Buttons from "./Buttons";
 import Section from "../../common/Section";
 import Header from "../../common/Header";
 import Container from "../../common/Container";
-
+import { ExampleTasksButton } from "./ExampleTasksButton";
 import { createGlobalStyle } from "styled-components";
 
 function Tasks() {
-  
+
   const GlobalStyle = createGlobalStyle`
     html {
   box-sizing: border-box;
@@ -31,6 +31,7 @@ body {
       <Header title="Lista zadań" />
       <Section
         title="Dodaj nowe zadanie"
+        extraHeaderContent={<ExampleTasksButton/>}
         body={<Form />}
       />
       <Section
