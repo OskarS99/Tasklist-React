@@ -6,26 +6,11 @@ import Section from "../../common/Section";
 import Header from "../../common/Header";
 import Container from "../../common/Container";
 import { ExampleTasksButton } from "./ExampleTasksButton";
-import { createGlobalStyle } from "styled-components";
+import { GlobalStyle } from "../../globalStyle";
 
 function Tasks() {
 
-  const GlobalStyle = createGlobalStyle`
-    html {
-  box-sizing: border-box;
-}
-
-*, ::after, ::before {
-  box-sizing: inherit;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #ededed;
-}
-    `;
-
-  return (
+ return (
     <Container>
       <GlobalStyle/>
       <Header title="Lista zadań" />
