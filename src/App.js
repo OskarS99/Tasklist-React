@@ -4,8 +4,9 @@ import {
   Switch,
   Route,
 } from "react-router-dom/cjs/react-router-dom.min";
-import Tasks from "./features/tasks/Tasks";
-import Author from "./features/author/Author";
+import TasksPage from "./features/tasks/TasksPage/index";
+import TaskPage from "./features/tasks/TaskPage";
+import AuthorPage from "./features/author/AuthorPage";
 import {  Navigation, NavigationLink, StyledNavLink } from "./styled";
 
 export default () => (
@@ -20,11 +21,16 @@ export default () => (
         </NavigationLink>
       </Navigation>
       <Switch>
+        <Route path="/zadania/:id">
+           <TaskPage/>
+        </Route>
+      </Switch>
+      <Switch>
         <Route path="/zadania">
-          <Tasks />
+          <TasksPage />
         </Route>
         <Route path="/autor">
-          <Author />
+          <AuthorPage />
         </Route>
       </Switch>
     </nav>
