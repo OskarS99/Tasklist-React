@@ -44,4 +44,6 @@ const tasksSlice = createSlice({
 
 export const { addTask, toggleHideDone, toggleTaskDone, removeTask, setAllDone, fetchExampleTasks, fetchExampleTasksError, fetchExampleTasksSuccess} = tasksSlice.actions;
 export const selectTasks = (state) => state.tasks;
+export const selectTaskById = (state, taskId) => selectTasks(state).find(({ id }) => id === taskId);
+
 export default tasksSlice.reducer;
