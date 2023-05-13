@@ -5,7 +5,7 @@ import { useLocation, useHistory} from "react-router-dom/cjs/react-router-dom";
 import searchQueryParamName from "../searchQueryParamName";
 
 
-export default () => {
+const Search = () => {
      const location = useLocation();
      const history = useHistory();
      const query = (new URLSearchParams(location.search)).get(searchQueryParamName);
@@ -32,3 +32,5 @@ export default () => {
     </Wrapper>
   );
 };
+
+export default Search;
