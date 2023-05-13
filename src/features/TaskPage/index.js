@@ -1,13 +1,13 @@
 import React from "react";
-import Section from "../../../common/Section";
-import Header from "../../../common/Header";
-import Container from "../../../common/Container";
-import { GlobalStyle } from "../../../globalStyle";
+import Section from "../../common/Section";
+import Header from "../../common/Header";
+import Container from "../../common/Container";
+import { GlobalStyle } from "../../globalStyle";
 import { useParams } from "react-router-dom/cjs/react-router-dom";
 import { useSelector } from "react-redux";
-import { selectTaskById } from "../tasksSlice";
+import { selectTaskById } from "../tasks/tasksSlice";
 
-function TaskPage() {
+const TaskPage = () =>  {
     const {id} = useParams();
     const task = useSelector(state => selectTaskById(state, id));
  return (
