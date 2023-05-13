@@ -1,10 +1,10 @@
 import { Button } from "./styled"
 import { useDispatch, useSelector } from "react-redux"
-import { selectTasks, fetchExampleTasks } from "../../tasksSlice"
+import { fetchExampleTasks, selectLoading } from "../../tasksSlice"
 
-export const ExampleTasksButton = () => {
+ const ExampleTasksButton = () => {
  const dispatch = useDispatch();
- const {loading} = useSelector(selectTasks);
+ const loading = useSelector(selectLoading);
 
 return (
         
@@ -13,3 +13,4 @@ return (
   </Button>
 )
 }
+ export default ExampleTasksButton;
