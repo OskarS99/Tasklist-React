@@ -5,11 +5,11 @@ import {
   Route,
 } from "react-router-dom/cjs/react-router-dom.min";
 import TasksPage from "./features/tasks/TasksPage/index";
-import TaskPage from "./features/tasks/TaskPage";
+import TaskPage from "./features/TaskPage/index";
 import AuthorPage from "./features/author/AuthorPage";
 import {  Navigation, NavigationLink, StyledNavLink } from "./styled";
 
-export default () => (
+const App = () => (
   <BrowserRouter>
     <nav>
       <Navigation>
@@ -36,3 +36,4 @@ export default () => (
     </nav>
   </BrowserRouter>
 );
+export default App;
