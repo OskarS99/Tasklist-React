@@ -1,16 +1,16 @@
 import React from "react";
 import {
-  BrowserRouter,
+  HashRouter,
   Switch,
   Route,
 } from "react-router-dom/cjs/react-router-dom.min";
 import TasksPage from "./features/tasks/TasksPage/index";
 import TaskPage from "./features/TaskPage/index";
 import AuthorPage from "./features/author/AuthorPage";
-import {  Navigation, NavigationLink, StyledNavLink } from "./styled";
+import { Navigation, NavigationLink, StyledNavLink } from "./styled";
 
 const App = () => (
-  <BrowserRouter>
+  <HashRouter>
     <nav>
       <Navigation>
         <NavigationLink>
@@ -20,20 +20,21 @@ const App = () => (
           <StyledNavLink to="/autor">O autorze</StyledNavLink>
         </NavigationLink>
       </Navigation>
+
       <Switch>
         <Route path="/zadania/:id">
-           <TaskPage/>
+          <TaskPage />
+        </Route>
+        <Route exact path="/zadania">
+          <TasksPage />
         </Route>
       </Switch>
       <Switch>
-        <Route path="/zadania">
-          <TasksPage />
-        </Route>
         <Route path="/autor">
           <AuthorPage />
         </Route>
       </Switch>
     </nav>
-  </BrowserRouter>
+  </HashRouter>
 );
 export default App;
