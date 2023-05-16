@@ -10,31 +10,23 @@ import { GlobalStyle } from "../../../globalStyle";
 import Search from "./Search";
 
 const TasksPage = () => {
-
- return (
+  return (
     <Container>
-      <GlobalStyle/>
+      <GlobalStyle />
       <Header title="Lista zadań" />
       <Section
         title="Dodaj nowe zadanie"
-        extraHeaderContent={<ExampleTasksButton/>}
+        extraHeaderContent={<ExampleTasksButton />}
         body={<Form />}
       />
-      <Section
-        title="Wyszukiwarka"
-        body={<Search />}
-      />
+      <Section title="Wyszukiwarka" body={<Search />} />
       <Section
         title="Dodaj zadanie"
-        extraHeaderContent={
-          <Buttons/>
-        }
-        body={
-          <TasksList/>
-        }
+        extraHeaderContent={<Buttons />}
+        body={<TasksList />}
       />
     </Container>
   );
-}
+};
 
 export default TasksPage;
