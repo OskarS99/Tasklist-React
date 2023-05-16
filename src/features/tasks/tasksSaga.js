@@ -5,7 +5,7 @@ import {
   fetchExampleTasksSuccess,
   selectTasks,
 } from "./tasksSlice";
-import { getExampleTasks } from "./getExapleTasks";
+import { getExampleTasks } from "./getExampleTasks";
 import { saveTasksInLocalStorage } from "./taskLocalStorage";
 
 function* fetchExampleTasksHandler() {
