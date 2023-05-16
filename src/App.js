@@ -1,11 +1,7 @@
 import React from "react";
-import {
-  HashRouter,
-  Switch,
-  Route,
-} from "react-router-dom/cjs/react-router-dom.min";
+import { HashRouter, Switch, Route } from "react-router-dom";
 import TasksPage from "./features/tasks/TasksPage/index";
-import TaskPage from "./features/TaskPage/index";
+import TaskPage from "./features/tasks/TaskPage/index";
 import AuthorPage from "./features/author/AuthorPage";
 import { Navigation, NavigationLink, StyledNavLink } from "./styled";
 
