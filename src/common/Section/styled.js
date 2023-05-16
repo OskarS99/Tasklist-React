@@ -16,9 +16,9 @@ export const SectionHeader = styled.header`
   padding: 20px;
   margin: 0;
 
-   @media (max-width: 1000px) {
-        grid-template-columns: 1fr;
-   }
+  @media (max-width: 1000px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const SectionTitle = styled.h2`
