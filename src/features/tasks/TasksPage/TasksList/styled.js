@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import styled, { css } from "styled-components";
 
 export const List = styled.ul`
@@ -27,6 +28,15 @@ export const Content = styled.span`
     css`
       text-decoration: line-through;
     `}
+`;
+
+export const StyledLink =styled(Link)`
+text-decoration: none;
+color: #15857eb0;
+
+&:hover{
+  font-weight: bold;
+}
 `;
 
 export const Button = styled.button`
