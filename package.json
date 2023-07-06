@@ -2,7 +2,7 @@
   "name": "todo-list-react",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://oskars99.github.io/tasklist-react/",
+  "homepage": "https://oskars99.github.io/Tasklist-React/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.16.5",
