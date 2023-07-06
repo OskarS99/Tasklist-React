@@ -1,4 +1,4 @@
-import { List, Item, Content, Button } from "./styled.js";
+import { List, Item, Content, Button, StyledLink } from "./styled.js";
 import {
   toggleTaskDone,
   removeTask,
@@ -7,7 +7,6 @@ import {
 } from "../../tasksSlice.js";
 import { useSelector, useDispatch } from "react-redux";
 import { useLocation } from "react-router-dom";
-import { Link } from "react-router-dom";
 import searchQueryParamName from "../searchQueryParamName.js";
 
 const TasksList = () => {
@@ -25,7 +24,7 @@ const TasksList = () => {
             {task.done ? "✔" : ""}
           </Button>
           <Content done={task.done}>
-            <Link to={`/zadania/${task.id}`}>{task.content}</Link>
+            <StyledLink to={`/zadania/${task.id}`}>{task.content}</StyledLink>
           </Content>
           <Button Delete onClick={() => dispatch(removeTask(task.id))}>
             🗑
